@@ -8,7 +8,7 @@
     .OUTPUTS
         None
     .EXAMPLE
-        Initialize-AzureADPowerShell
+        Initialize-AzureAD
 #>
 
 [CmdletBinding()]
