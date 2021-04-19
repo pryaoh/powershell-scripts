@@ -49,7 +49,7 @@ foreach ($identity in $Identities) {
 
         if($StatusDetail) {
 
-            $moveStatusDetail = $moveStatus | Get-MoveRequestStatistics | Select-Object StatusDetail, PercentComplete
+            $moveStatusDetail = $moveStatus | Get-O365MoveRequestStatistics | Select-Object StatusDetail, PercentComplete
         
             $resultObj | Add-Member -MemberType NoteProperty -Name StatusDetail -Value $moveStatusDetail.StatusDetail
             $resultObj | Add-Member -MemberType NoteProperty -Name PercentComplete -Value $moveStatusDetail.PercentComplete
